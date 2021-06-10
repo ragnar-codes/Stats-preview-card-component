@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-color:  hsl(233, 47%, 7%);
+    font-size: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.container {
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    width: 80%;
+    height: 60vh;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+}
+.image{
+    width: 50%;
+    height: 100%;
+    
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+}
+.layer {
+    position: absolute;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.4;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+
+.text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-header {
+    font-weight: 800;
+    font-size: 35px;
+    text-align: justify;
+    padding: 0 60px;
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%); 
+}
+span {
+    color: hsl(277, 64%, 61%);
+}
+p {
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 60px;
+    text-align: justify;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.numbers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.numbersEl{
+    padding: 0 45px;
+    text-align: justify;
+    font-family: 'Lexrend Deca', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+label {
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+footer {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 18px;
+}
+footer a {
+    text-decoration: none;
+    color: hsl(277, 64%, 61%);
+}
+
+@media only screen and (max-width: 900px){
+    body{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100vh;
+    }
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+
+    }
+    .text {
+        width: 80%;
+        text-align: center;
+        
+        
+    }
+    .image {
+        width: 100%;
+        height: 50%;
+    }
+    .layer {
+        width: 100%;
+        height: 38%;
+    }
+    .main-header {
+        font-weight: 400;
+        font-size: 15px;
+        padding: 0;
+    }
+    p {
+        font-size: 15px;
+        padding: 0 0;
+        text-align: center;
+    }
+
+}
